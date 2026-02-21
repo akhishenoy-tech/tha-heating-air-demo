@@ -16,12 +16,12 @@ export const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "py-3" : "py-5"}`}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-500 ${isScrolled ? "glass shadow-2xl" : "bg-white/10 backdrop-blur-sm"}`}>
+        <div className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-500 bg-white ${isScrolled ? "shadow-2xl" : "shadow-lg"}`}>
           <div className="flex items-center">
             <THALogo size="small" />
           </div>
 
-          <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-brand-muted">
+          <div className="hidden lg:flex items-center gap-6 text-sm font-bold text-brand-primary">
             <a href="#about" className="hover:text-brand-highlight transition-colors">About Us</a>
             <a href="#services" className="hover:text-brand-highlight transition-colors">Services</a>
             <a href="#areas" className="hover:text-brand-highlight transition-colors">Areas We Serve</a>
